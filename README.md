@@ -11,37 +11,30 @@ The Daily Motivation Alarm App helps users start each day with positivity. Devel
 - Member 3: Aravind Ramesh - LBS College of Engineering Kasaragod
 
 ### Project Description
-[2-3 lines about what your project does]
+We are dedigned a motivational alaram in which the alaram rings every day respective time that is set by the user, once the user snooze it, the motivational tone will be played 
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+for humans, the entire day begins with what mood he is on the morning. the mood of the day mostly determined by the specific thing they hears or do daily.
+we proposing a motivational alarm that rings based on set by user when the day before he slept
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Motivational alarm and task setting is the feature and main thing about our project, this method help the human to stay positively and remainds him how many task he has to do on particular that day.
+so that he stay positive the entire day 
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- Java
 
 ### Implementation
-For Software:
+using java we proposd an alarm application where user can set alarm a day before he wake up, that works similar to normal aarm but it dynamically generates different motivational tone's to get positiveness to human
+here we implemented the solution using java programming language and  firebase as backend database, for storing different tones and to save daily tasks that is set by user
 # Installation
-[commands]
+pip install Java
 
 # Run
-[commands]
+javac filename.javajava filename
 
-### Project Documentation
-For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
