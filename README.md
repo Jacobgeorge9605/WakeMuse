@@ -1,6 +1,10 @@
 # WakeMuse
 The Daily Motivation Alarm App helps users start each day with positivity. Developed in Java for Android, it offers personalized motivational songs, a daily quote, and a customizable to-do list with notifications to inspire and organize users. Ideal for boosting morning motivation, it supports users in waking up with purpose and staying on track.
+
+
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+
+
 
 ### Team Name: Orion Nebula
 
@@ -21,68 +25,120 @@ we proposing a motivational alarm that rings based on set by user when the day b
 Motivational alarm and task setting is the feature and main thing about our project, this method help the human to stay positively and remainds him how many task he has to do on particular that day.
 so that he stay positive the entire day 
 
+
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- Java
+1. Programming Language: Java (for Android app development)
+2. Development Environment: Android Studio (IDE for designing and building Android apps)
+3. Libraries and Frameworks:
+    AndroidX Core: For compatibility features like NotificationCompat.
+    WorkManager: For scheduling recurring tasks such as daily alarms.
+    MediaPlayer: For playing alarm tones and motivational audio.
+    AudioManager: For managing audio streams (e.g., alarms).
+4. System Components:
+    AlarmManager: For scheduling precise alarms and wake-up triggers.
+    BroadcastReceiver: To respond to alarm triggers and initiate app                           actions.
+    Notification Channels: For managing and displaying notifications.
+5. Testing and Debugging:
+    Android Emulator for testing app behavior.
+    Logcat for debugging and monitoring app activities.
 
+   
 ### Implementation
-using java we proposd an alarm application where user can set alarm a day before he wake up, that works similar to normal aarm but it dynamically generates different motivational tone's to get positiveness to human
-here we implemented the solution using java programming language and  firebase as backend database, for storing different tones and to save daily tasks that is set by user
-# Installation
-pip install Java
+
+We propose an innovative alarm application built using Java and Firebase that dynamically generates motivational tones to provide a positive start to the day. Users can set alarms for the next day, with each alarm playing a unique tone fetched from Firebase Storage. The app also allows users to set and save daily tasks in Firebase Firestore or Realtime Database, ensuring their goals are easily accessible. By combining dynamic audio playback with personalized task management, the app delivers an inspiring and productive morning routine while leveraging Firebase for reliable backend support.
+
+
+# Installations in this Project
+1. Android Studio: IDE for developing, debugging, and testing the     
+                   application.
+2.Firebase SDK:  Add the following Firebase dependencies to your build.gradle file:
+
+implementation 'com.google.firebase:firebase-storage:20.2.1'
+implementation 'com.google.firebase:firebase-firestore:24.6.0'
+implementation 'com.google.firebase:firebase-database:20.2.1'
+
+3.AndroidX Libraries: For notifications and modern app compatibility:
+
+implementation 'androidx.core:core:1.6.0'
+implementation 'androidx.work:work-runtime:2.7.0'
+
+Java Development Kit (JDK): Ensure JDK 8 or higher is installed for Java development.
+
+
 
 # Run
-javac filename.javajava filename
+Follow these steps to run the project on your local system or emulator
+
+1. Clone or Download the Project: Clone the repository or download the project ZIP file and extract it.
+2. Open in Android Studio: Open Android Studio and select "Open an existing project".
+Navigate to the project folder and open it.
+3.Install Dependencies
+Ensure all required dependencies are added in the build.gradle file.
+Sync the project with Gradle by clicking "Sync Now" in Android Studio.
+4.Setup Firebase
+Go to the Firebase Console and create a new project.
+Add an Android app to the Firebase project and download the google-services.json file.
+Place the google-services.json file in the app/ directory of the project.
+Enable Firebase Storage and Firestore/Realtime Database in the Firebase Console.
+5. Configure Emulator or Device: Set up an Android Emulator in Android Studio or connect a physical Android device via USB with USB debugging enabled.
+6. Build and Run the App: 
+Click the Run button in Android Studio or press Shift + F10.
+Select the target device or emulator for deploying the app.
+Test the Functionality
+7.Set an alarm and add tasks to test the app.
+Verify the motivational tone is fetched dynamically and daily tasks are stored in Firebase.
+
 
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-Add caption explaining what this shows
 
-![Screenshot2](Add screenshot 2 here with proper name)
-Add caption explaining what this shows
+![img 1](https://github.com/user-attachments/assets/fea3b2f8-93c6-4d82-b5da-409cde7d597d)
+Alaram can be set by clicking the SET ALARAM BUTTON
 
-![Screenshot3](Add screenshot 3 here with proper name)
-Add caption explaining what this shows
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-Add caption explaining your workflow
 
-For Hardware:
+![img 2](https://github.com/user-attachments/assets/c2765871-0623-4c76-a98c-938c886d75b2)
+Hour needle can be Adjusted using an Virtual Analogue clock
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-Add caption explaining connections
+![img 3](https://github.com/user-attachments/assets/086912c5-3859-41cf-a990-4c81762675f1)
+Minute needle can be Adjusted using an Virtual Analogue clock
 
-![Schematic](Add your schematic diagram here)
-Add caption explaining the schematic
 
-# Build Photos
-![Components](Add photo of your components here)
-List out all components shown
 
-![Build](Add photos of build process here)
-Explain the build steps
+![img 4](https://github.com/user-attachments/assets/5a00337e-3188-45e2-99d4-64472dd8f579)
+Now ALARAM has been set we can also set our daily task in the Section
 
-![Final](Add photo of final product here)
-Explain the final build
+
+
+![img 5](https://github.com/user-attachments/assets/0ac30d0c-fe1a-4b84-9f91-f14806df8580)
+After entering the daily task, we can save our task using SAVE button.
+
+
+
+![img 6](https://github.com/user-attachments/assets/d83c32ae-c068-4cd7-8673-e807345ab46e)
+Now the task has been saved at the database and it will displayed as long as alram rings
+
+
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-Explain what the video demonstrates
 
-# Additional Demos
-[Add any extra demo materials/links]
+
+https://github.com/user-attachments/assets/0bb6a94c-7d56-494a-a5c2-c9353a5d429c
+
+
+video demonstrates the working of Our application
+
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Nithish Nayak: Coding
+- Jacob George: Idea creation and UI design
+- Aravind ramesh: Literature Survey and resorce collection
 
----
+-----------------------------------------------------------------------
 Made with ❤ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
